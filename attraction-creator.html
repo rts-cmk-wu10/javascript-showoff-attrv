@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Attraction Creator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Attraction Creator</h1>
+        <button id="toggleButton">Toggle Theme</button>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Novelia</a></li>
+                <li><a href="index.html">Attractions</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="creator">
+        <h2>Create or Modify Attractions</h2>
+        <div class="flex-container">
+            <div class="input-column">
+                <div class="input-group">
+                    <div class="text-input-section">
+                        <input type="text" id="attractionName" placeholder="Attraction Name">
+                        <select id="attractionState">
+                            <option value="Origin">Origin</option>
+                            <option value="New Bevis">New Bevis</option>
+                            <option value="Abaliet">Abaliet</option>
+                            <option value="Feng">Feng</option>
+                            <option value="Monsears">Monsears</option>
+                            <!-- More states -->
+                        </select>
+                        <input type="number" id="attractionRatings" placeholder="Ratings (1-5)" min="1" max="5">
+                        <input type="text" id="attractionDescription" placeholder="Description">
+                        <input type="text" id="attractionLocation" placeholder="Location">
+                    </div>
+                    <div class="misc-input-section">
+                        <input type="text" id="attractionHours" placeholder="Hours">
+                        <input type="text" id="attractionAdmission"
+                            placeholder='Admission (e.g. [{ "label": "Adults", "price": "$30" }])'>
+                        <input type="text" id="attractionImgUrl" placeholder="Image URL">
+                        <img id="imgPreview" alt="Image preview" />
+                    </div>
+                </div>
+                <div class="button-group">
+                    <button id="updateButton">Update Selected</button>
+                    <button id="addButton">Add Attraction</button>
+                    <button id="removeButton">Remove Attraction</button>
+                    <button id="previewButton">Preview</button>
+                    <button id="toggleJSONPanelButton">Toggle JSON Panel</button>
+                </div>
+                <p id="errorText"></p>
+                <h3>Attractions List</h3>
+                <ul id="attractionList">
+                    <!-- List of attractions will be here -->
+                </ul>
+                <div id="jsonPanel">
+                    <textarea id="jsonTextarea" rows="10" cols="50"></textarea>
+                    <div>
+                        <button id="updateJSONButton">Update JSON</button>
+                        <button id="applyJSONButton">Apply JSON</button>
+                    </div>
+                </div>
+            </div>
+            <div id="previewArea">
+                <!-- Preview content will go here -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Novelia Tourism. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts/search-and-creator.js"></script>
+    <script src="scripts/theme-changer.js"></script>
+</body>
+
+</html>

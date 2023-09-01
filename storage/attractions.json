@@ -1,0 +1,45 @@
+
+[
+    {
+        "name": "Union Aqua Park",
+        "description": "Immerse yourself in a paradise of splashy fun at Union Aqua Park, located in the bustling town of Union in the picturesque region of New Bevis. As one of Novelias premier water-fun-lands, our expansive indoor facility ensures the perfect day out no matter the weather. Experience aquatic thrills in a climate-controlled environment, ideal for kids and adults alike.",
+        "state": "New Bevis",
+        "location": "Manhattan",
+        "hours": "9AM - 5PM",
+        "admission": [
+            { "label": "Adults", "price": "$30" },
+            { "label": "Children (5-12)", "price": "$20" },
+            { "label": "Under 5", "price": "Free" }
+        ],
+        "ratings": 5,
+        "imageUrl": "https://static.wikia.nocookie.net/stroke-facility/images/5/5a/Tropical0007.jpg/revision/latest/scale-to-width-down/1000?cb=20230818110023"
+    },
+    {
+        "name": "Huge fucking Monroe statue",
+        "description": "Giant statue of Edgard Monroe, its awesome.",
+        "state": "New Bevis",
+        "location": "Manhattan",
+        "hours": "9AM - 5PM",
+        "admission": [
+            { "label": "Adults", "price": "$30" },
+            { "label": "Children (5-12)", "price": "$20" },
+            { "label": "Under 5", "price": "Free" }
+        ],
+        "ratings": 4,
+        "imageUrl": "https://static.wikia.nocookie.net/stroke-facility/images/6/66/Uniondistance.png/revision/latest/scale-to-width-down/1000?cb=20230307124838"
+    },
+    {
+        "name": "Ostvald Castle",
+        "description": "Ascend to a world where history and fantasy intertwine at Ostvald Castle. This architectural marvel towers atop a mountain, adjacent to the charming Ostvald Village in the scenic realm of Abaliet. A relic from medieval times, Ostvald Castle offers a glimpse into Novelias rich past, as well as panoramic views that will take your breath away.",
+        "state": "Abaliet",
+        "location": "Manhattan",
+        "hours": "9AM - 5PM",
+        "admission": [
+            { "label": "Adults", "price": "$30" },
+            { "label": "Children (5-12)", "price": "$20" },
+            { "label": "Under 5", "price": "Free" }
+        ],
+        "ratings": 5,
+        "imageUrl": "https://static.wikia.nocookie.net/stroke-facility/images/0/0d/Ostvald.jpg/revision/latest/scale-to-width-down/1000?cb=20211107143938"
+    }
+]

@@ -1,14 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<link rel="stylesheet" href="/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Visit Novelia</title>
 </head>
 <body>
-	
-	<script src="/app.js" defer></script>
+    <header>
+        <h1>Welcome to Novelia!</h1>
+        <!-- fyi novelia er et tilfældigt fiktivt land -->
+        <button id="toggleButton">Toggle Theme</button>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Novelia</a></li>
+                <li><a href="#">Attractions</a></li>
+                <li><a href="attraction-creator.html">[ CREATOR ]</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="search">
+        <h2>Search for Attractions</h2>
+        <input type="text" id="searchInput" placeholder="Search for attractions...">
+        <select id="stateFilter">
+            <option value="">All States</option>
+            <option value="Origin">Origin</option>
+            <option value="New Bevis">New Bevis</option>
+            <option value="Abaliet">Abaliet</option>
+            <option value="Feng">Feng</option>
+            <option value="Monsears">Monsears</option>
+        </select>
+        <select id="ratingsFilter">
+            <option value="">All Ratings</option>
+            <option value="5">5 Stars</option>
+            <option value="4">4 Stars</option>
+            <option value="3">3 Stars</option>
+            <option value="2">2 Stars</option>
+            <option value="1">1 Stars</option>
+            <!-- 1-5 -->
+        </select>
+        <ul id="searchResults">
+            <!-- search results go here, created with js -->
+        </ul>
+    </section>    
+
+    <section id="attractions">
+        <h2>Popular Attractions (ignore)</h2>
+        <div class="attraction">
+            <img src="https://placehold.co/600x400/png" alt="Attraction 1">
+            <h3>Attraction 1</h3>
+            <p>Description of Attraction 1.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Novelia Tourism. All rights reserved.</p>
+    </footer>
+    <script src="scripts/search-and-creator.js"></script>
+    <script src="scripts/theme-changer.js"></script>
 </body>
 </html>
